@@ -7,17 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Employee\**" />
-    <EmbeddedResource Remove="Employee\**" />
-    <None Remove="Employee\**" />
+    <Compile Remove="Hangfire\**" />
+    <EmbeddedResource Remove="Hangfire\**" />
+    <None Remove="Hangfire\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="AuthUser.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Hangfire.Core" Version="1.8.12" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.1" />
   </ItemGroup>
 
 </Project>
