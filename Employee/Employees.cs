@@ -27,7 +27,7 @@ public class Employees
     [Required(ErrorMessage = "{0} must be supplied")]
     [DataType(DataType.DateTime)]
     [Display(Name = "Hire Date", Description = "Date of the Employee was hired on.")]
-    public required DateTime HireDate { get; set; }
+    public required string HireDate { get; set; }
 
     // Navigation property
     public List<EmployeePhones>? EmployeePhones { get; set; }
